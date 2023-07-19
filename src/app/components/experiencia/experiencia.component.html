@@ -1,0 +1,45 @@
+<section id="experiencia">
+  <div class="experiencia">
+    <!-- Contenido del componente Experiencia -->
+    <section class="section jobs" id="jobs">
+      <div class="container" id="experiencia">
+        <div class="section-box">
+          <div class="about-title mb-5" data-aos="fade-up" data-aos-duration="1000">
+            <h3 class="e-font section-title">
+              <span class="code-font n-section-title"><span class="pink-text">02. </span>Experiencia</span>
+            </h3>
+          </div>
+          <div class="jobs-tabs" data-aos="fade-up" data-aos-duration="1000">
+            <div class="row">
+              <div class="col-md-4">
+                <ul class="company-list">
+                  <li (click)="selectCompany('mate-web-tecnologia')" [class.active]="selectedCompany === 'mate-web-tecnologia'">
+                    <span class="company-name">Mate Web Tecnologia</span>
+                  </li>
+                  <li (click)="selectCompany('codo-a-codo')" [class.active]="selectedCompany === 'codo-a-codo'">
+                    <span class="company-name">Codo a Codo</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-8">
+                <div class="job-description" *ngIf="selectedCompany === 'mate-web-tecnologia' || !selectedCompany">
+                  <h4 class="title-tab-content">Fullstack developer |<span class="pink-text"> Mate web tecnologia</span></h4>
+                  <h5 class="job-time">Diciembre 2019 - Actualidad</h5>
+                  <p class="job-description">Traducción de sitios web estáticos a sitios web interactivos.</p>
+                  <p class="job-description">Diseño y maquetación de sitios web con diversas funcionalidades</p>
+                  <p class="job-description">Asistencia técnica y mantenimiento según sea necesario.</p>
+                </div>
+                <div class="job-description" *ngIf="selectedCompany === 'codo-a-codo'">
+                  <h4 class="title-tab-content">Mentor de programación |<span class="pink-text"> Codo a Codo</span></h4>
+                  <h5 class="job-time">2023</h5>
+                  <p class="job-description">Acompañamiento y asesoramiento de los estudiantes</p>
+                  <p class="job-description">Resolución de problemáticas y emergentes relacionadas a las tecnologías y al sector IT</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>

@@ -1,0 +1,32 @@
+/* Estilos para el componente Educación */
+.educacion {
+  margin-bottom: 10%;
+  margin-top: 25%;
+}
+
+/* Ajusta el valor según sea necesario para el contenedor de la imagen */
+.image-container {
+  width: 31%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 10px;
+}
+
+/* Altura fija para las imágenes */
+.h-250,
+.h-md-250 {
+  height: 250px;
+}
+
+/* Estilo de texto en color rosa */
+.pink-text {
+  color: #e15e71;
+}
+
+/* Estilo de subrayado en color púrpura */
+.underline.purple-text {
+  text-decoration: underline;
+  color: purple;
+  font-weight: bold;
+}

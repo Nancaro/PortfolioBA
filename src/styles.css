@@ -1,0 +1,56 @@
+.portfolio {
+  background-color: #ffffff;
+}
+
+/* Fuentes de Calibre */
+@font-face {
+  font-family: 'Calibre';
+  src: url('../Fonts/CalibreBlack.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Calibre';
+  src: url('../Fonts/CalibreRegular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Calibre';
+  src: url('../Fonts/CalibreThin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* Fuentes de SF Mono */
+@font-face {
+  font-family: 'SF Mono';
+  src: url('../Fonts/SFMono-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Mono';
+  src: url('../Fonts/SFMono-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Mono';
+  src: url('../Fonts/SFMono-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Aplicar fuentes a los elementos */
+body {
+  font-family: 'Calibre', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'SF Mono', monospace;
+}

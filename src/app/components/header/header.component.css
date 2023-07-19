@@ -1,0 +1,180 @@
+/* Estilos para la forma de división en la parte superior */
+.shape-divider-top {
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 2;
+}
+
+/* Estilos para el SVG que contiene la forma */
+.shape-divider-top svg {
+    position: relative;
+    display: block;
+    width: 200%;
+    min-width: 100%; /* Ancho mínimo del doble del ancho del contenedor */
+    height: 200px;
+    transform: translateX(-0%); /* Centra el SVG horizontalmente */
+    animation: wave 45s linear infinite; /* Aplica la animación de onda */
+}
+
+@keyframes wave {
+    0% {
+        transform: translateX(0) translateY(0); /* Estado inicial de la animación */
+    }
+    50% {
+        transform: translateX(-50%) translateY(-8px); /* Estado intermedio de la animación */
+    }
+    100% {
+        transform: translateX(0) translateY(0); /* Estado final de la animación */
+    }
+    100% {
+        transform: translateX(0) translateY(0); /* Repetir el estado final */
+    }
+}
+
+/* Estilos para el relleno de la forma */
+.shape-divider-top .shape-fill {
+    fill: #8508FA;
+}
+
+/* Estilos para la forma clonada */
+.shape-divider-top .wave-clone {
+    transform: scaleX(200%) translateX(-50%); /* Voltea horizontalmente la forma clonada y la posiciona en la mitad */
+}   
+
+
+/* Estilos para el contenedor del encabezado */
+.header-container {
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    background: #31313100;
+    font-size: 1.3vw;
+    height: auto;
+    overflow: visible;
+}
+
+/* Estilos para el logo BA */
+#logoBA {
+    width: 80px;
+    position: relative;
+    left: 0.5cm;
+    z-index: 10;
+    top: 5px;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    font-family: 'SF Mono', monospace;
+    font-size: 1.0rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin-top: -30px;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-item {
+    position: relative;
+    margin-right: 1.5em;
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 3px;
+    width: 0;
+    border-radius: 2px;
+    background-color: #af31b5;
+    transition: 0.4s ease;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #f3f3f3;
+    align-items: center;
+}
+
+.nav li a:hover {
+    color: #e15e71;
+    transform: translateY(5px);
+}
+
+.boton-log {
+    padding: 0.6em;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2vw;
+    color: #f3f3f3;
+}
+
+.boton-log:hover {
+    color: #e15e71;
+}
+
+/* Estilos para la visualización en dispositivos móviles con pantalla pequeña */
+@media only screen and (max-width: 480px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .navbar {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav-item {
+        margin-right: 0;
+        margin-bottom: 1em;
+    }
+
+    .botones {
+        display: flex;
+        flex-direction: row;
+        margin-top: 1em;
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .boton-log {
+        font-size: 3.5vw;
+    }
+}
+
+/* Estilos para la visualización en dispositivos móviles con pantalla mediana */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .nav-item {
+        margin-right: 1.5em;
+    }
+
+    .botones {
+        margin-left: auto;
+    }
+}
+
+/* Estilos para la clase .nav-number */
+.nav-number {
+    color: #e15e71;
+}
+
+

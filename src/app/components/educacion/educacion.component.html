@@ -1,0 +1,29 @@
+<section id="educacion">
+  <section class="section educacion" id="educacion">
+    <div class="container">
+      <div class="section-box">
+          <div class="educacion-title" data-aos="fade-up">
+            <h3 class="section-title">
+              <span class="n-section-title"><span class="pink-text">04.</span> Educación</span>
+            </h3>
+          </div>
+          <div class="row mb-2">
+            <div class="col-md-6" *ngFor="let educacionItem of educacion">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <span class="underline purple-text">{{ educacionItem.universidad }}</span>
+                  <h3 class="mb-0">{{ educacionItem.titulo }}</h3>
+                  <div class="mb-1 text-body-secondary">{{ educacionItem.fecha }}</div>
+                  <p class="card-text mb-auto">{{ educacionItem.descripcion }}</p>
+                  <a href="{{ educacionItem.url }}" class="stretched-link">Ver certificado</a>
+                </div>
+                <div class="col-auto d-none d-lg-block image-container">
+                  <img class="bd-placeholder-img" width="200" height="250" src="{{ educacionItem.imagen }}" alt="Thumbnail">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+</section>

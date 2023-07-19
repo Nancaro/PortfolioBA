@@ -1,0 +1,118 @@
+.proyectos {
+  margin-bottom: 20px;
+}
+
+.album {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.proyectos-cards-container {
+  top: 5em;
+  overflow: hidden;
+  width: 100%;
+  padding: 0 2%;
+  box-shadow: 0px 0px 50px 5px #FFFFFF;
+  padding-top: 0.62em;
+  background-color: #FFFFFF;
+}
+
+.my_swiper {
+  padding: 1.8em;
+}
+
+.proyecto-card {
+  box-shadow: 0 6px 10px #FFFFFF;
+  border-radius: 1em;
+  overflow: hidden;
+  height: 270px;
+  margin-bottom: 2em;
+  list-style: none;
+  list-style-type: none;
+  text-align: center;
+  background-color: #FFFFFF;
+  border-right: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+  transition: all .3s;
+}
+
+.proyecto-card:hover {
+  border: 1px solid #D9A0BB;
+  transform: scale(1.1);
+}
+
+.swiper-pagination-bullet {
+  background: #f3f3f3;
+}
+
+.swiper-pagination-bullet-active {
+  background: #FFFFFF;
+}
+
+.proyecto-header {
+  height: 140px;
+  transition: all 1s;
+  max-width: 100%;
+}
+
+.proyecto-header > img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.proyecto-contenido {
+  background-color: #FFFFFF;
+  padding: 10px 6px;
+}
+
+.nombre {
+  letter-spacing: 2px;
+  font-size: 1em;
+}
+
+.descripcion {
+  font-size: 0.7em;
+  margin-bottom: 80px;
+}
+
+@media only screen and (max-width: 480px) {
+  #proyectos {
+    margin-top: -4em;
+    height: max-content;
+    padding-bottom: 8em;
+  }
+
+  .proyectos-cards-container {
+    top: 3em;
+  }
+
+  .proyecto-card:hover {
+    transform: none;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  #proyectos {
+    margin-top: -4em;
+    height: max-content;
+    padding-bottom: 8em;
+  }
+
+  .proyectos-cards-container {
+    top: 2em;
+  }
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.pink-text {
+  color: #e15e71;
+}
