@@ -1,6 +1,4 @@
 .social {
-  content: "";
-  display: block;
   width: 20px;
   height: 20px;
   margin: 0 auto;
@@ -30,29 +28,22 @@
   position: relative;
   display: block;
   width: 200%;
-  min-width: 100%; /* Ancho mínimo del doble del ancho del contenedor */
+  min-width: 100%;
   height: 200px;
-  transform: translateX(-0%); /* Centra el SVG horizontalmente */
+  transform: translateX(-0%);
   animation: wave 45s linear infinite;
 }
 
-/* Estilos para la forma clonada */
 .shape-divider-top .wave-clone {
-  transform: scaleX(200%) translateX(-50%); /* Voltea horizontalmente la forma clonada y la posiciona en la mitad */
+  transform: scaleX(200%) translateX(-50%);
 }
 
 @keyframes wave {
-  0% {
-    transform: translateX(0) translateY(0); /* Estado inicial de la animación */
+  0%, 100% {
+    transform: translateX(0) translateY(0);
   }
   50% {
-    transform: translateX(-50%) translateY(-8px); /* Estado intermedio de la animación */
-  }
-  100% {
-    transform: translateX(0) translateY(0); /* Estado final de la animación */
-  }
-  100% {
-    transform: translateX(0) translateY(0); /* Repetir el estado final */
+    transform: translateX(-50%) translateY(-8px);
   }
 }
 
@@ -67,12 +58,17 @@
   width: 2px;
   height: 90px;
   margin: 0 auto;
-  background-color: #000000;
+  background-color: #000;
 }
 
 .footer-left-bar li,
 .footer-right-bar li {
   list-style: none;
+  margin: 20px 0;
+}
+
+.footer-left-bar li:last-of-type {
+  margin-bottom: 33px;
 }
 
 .footer-left-bar {
@@ -84,15 +80,7 @@
 
 .footer-left-bar i {
   font-size: 19px;
-  color: #000000;
-}
-
-.footer-left-bar li {
-  margin: 20px 0px;
-}
-
-.footer-left-bar li:last-of-type {
-  margin-bottom: 33px;
+  color: #000;
 }
 
 .footer-right-bar {
@@ -100,21 +88,13 @@
   bottom: -20px;
   right: 50px;
   padding: 0;
-}
-
-.footer-right-bar li {
-  transform: rotate(90deg);
-  margin: 20px 0px;
-}
-
-.footer-right-bar {
   font-family: monospace;
   font-size: 12px;
-  letter-spacing: 0.01m;
+  letter-spacing: 0.01em;
   text-orientation: upright;
   margin: 20px auto;
   padding: 0px;
-  color: #000000;
+  color: #000;
 }
 
 #email {
@@ -131,17 +111,12 @@
   right: 0;
   bottom: -60px;
   text-align: center;
-}
-
-.footer-credits {
-  color: #000000;
+  color: #000;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .footer-credits:hover,
 .footer-credits:focus {
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
 }
-
-@import '~@fortawesome/fontawesome-free/css/all.css';

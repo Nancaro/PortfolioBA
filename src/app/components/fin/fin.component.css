@@ -1,11 +1,7 @@
-@import '~@fortawesome/fontawesome-free/css/all.css';
-
-
 .contact {
-  margin: 0 auto;
   max-width: 1000px;
+  margin: 0 auto;
   text-align: center;
-  height: auto;
   padding: 20px;
 }
 
@@ -37,4 +33,9 @@
 #email {
   margin: 40px auto;
   width: 60px;
+}
+
+.contact-text {
+  margin-bottom: 10px;
+  font-size: 16px;
 }
